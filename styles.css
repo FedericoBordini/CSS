@@ -1,0 +1,20 @@
+span:hover {
+    color: blue;
+}
+
+a[href="google.com.ar"] {
+    display: block;
+    color: red;
+}
+
+/* a[title] {
+    color: green;
+} */
+
+/* p::first-line {
+            color: green;
+        } */
+
+article>p {
+    color: purple
+}
