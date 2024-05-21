@@ -58,3 +58,20 @@ article > p {
     color: purple
 }
 ```
+
+### Selector universal
+
+Es representado por un asterisco (*) y selecciona todo el documento o lo que embuelbe el elemento padre, vemos en el ejemplo como funciona eliminando todos los margenes que tiene el navegador.
+
+``` css
+* {
+  margin: 0;
+}
+```
+Para tener un pequeño ejemplo del selector universal fuera de afectar a todo el documento podemos usarlo con, por ejemplo, una pseudo-clase como :first-child. Esto nos permite hacer que todos los primeros hijos sean incluidos y ponerlos en negrita. 
+
+``` css
+.prueba *:first-child {
+    font-weight: bold;
+}
+```

@@ -1,3 +1,7 @@
+/* * {
+    margin: 0;
+} */
+
 span:hover {
     color: blue;
 }
@@ -16,5 +20,9 @@ a[href="google.com.ar"] {
         } */
 
 article>p {
-    color: purple
+    color: blue
+}
+
+.prueba *:first-child {
+    font-weight: bold;
 }
