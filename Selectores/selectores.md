@@ -116,3 +116,27 @@ h1#heading {
 
 > [!WARNING]
 > Utilizar el mismo ID varias veces en un documento puede parecer que funciona a efectos de estilo, pero no lo haga. Resulta en código inválido, y causará un comportamiento extraño en muchos lugares, además de ser más útil con JavaScript.
+
+### Selectores de presencia y valor
+
+Nos permite selecionar basándose en la presencia de un atributo o en coincidencias.
+
+- Usando `li[class]` podemos coincidir cualquier elemento con un atributo de clase.
+
+- `li[class="a"]` coincide con una clase `a` pero unicamente que tenga ese resultado, si esta separado por espacios en blanco u otra cosa no afectara.
+
+- `li[class~="a"]` es similar al anterior con la diferencia de que `a` es parte de la clase y puede estar separada por espacios en blanco.
+
+### Selectores de coincidencia
+
+Esto nos permite hacer una busqueda más precisa dentro de los valores para cada atributo.
+
+- `li[class^="a"]` coincide con cualquier valor de atributo que comience por `a`.
+
+- `li[class$="a"]` en este caso coincide con el valor que termine en `a`.
+
+- `li[class*="a"]` por último este coincidira con cualquier valor de atributo que contenga la letra `a`.
+
+### Case-sensitivity
+
+Si queremos que, por así decirlo, desactivar la distinción entre mayúsculas y minúsculas tenemos que agregar una `i` antes del corchete de cierre, indicandole al navegador que debe desactivar esa forma del código ASCII. `li[class^="a"]`

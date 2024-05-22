@@ -51,3 +51,35 @@ article>p {
 h1#heading {
     color: rebeccapurple;
 }
+
+/* li[class] {
+    font-size: 200%;
+}
+
+li[class="a"] {
+    background-color: yellow;
+}
+
+li[class~="a"] {
+    color: red;
+} */
+
+li[class^="a"] {
+    font-size: 200%;
+}
+
+li[class$="a"] {
+    background-color: yellow;
+}
+
+li[class*="a"] {
+    color: red;
+}
+
+p[class^="d"] {
+    background-color: purple;
+}
+
+p[class^="D" i] {
+    color: red;
+}
