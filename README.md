@@ -1,1 +1,1 @@
-# Apuntos de CSS en español resumiendo MDN
+# Apuntes de CSS en español resumiendo MDN
